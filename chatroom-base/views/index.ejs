@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+	#messages {
+		/*	display: none;*/
+	}
+	#name {
+		display: none;
+	}
+	#room {
+		display: none;
+	}
+</style>
+<head>
+	<title>Socket.IO example</title>
+	<meta charset="utf-8">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<ul id="messages">
+		<form action="" id="msg">
+			<input id="mbox" type="text" placeholder="Enter a message"
+			 autocomplete="off"/>
+			<button>Submit</button>
+		</form>
+	</ul>
+
+	<form action="" id="name">
+		<input id="nbox" type="text" placeholder="Enter a nickname"
+		 autocomplete="off"/>
+		<button>Submit</button>
+	</form>
+	<form action="" id="room">
+		<input id="rbox" type="text" placeholder="Enter a room"
+		 autocomplete="off"/>
+		<button>Submit</button>
+	</form>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+</script>
+<script src="script.js"></script>
+</html>
